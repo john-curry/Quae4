@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\section*{Question 1}
+\nonstopmode
+$$\begin{bmatrix}5, & 28, & 19, & 15, & 20, & 33, & 12, & 17, & 10\end{bmatrix}$$\\
+$$h(k) = \operatorname{Mod}{\left (2 k + 5,9 \right )}$$
+$$ 6 : [5]$$\\
+$$ 0 : [20]$$\\
+$$ 2 : [12]$$\\
+$$ 8 : [15, 33]$$\\
+$$ 7 : [28, 19, 10]$$\\
+$$ 3 : [17]$$\\
+\section*{Question 2}
+$$\begin{bmatrix}10, & 22, & 31, & 4, & 15, & 28, & 17, & 88, & 5\end{bmatrix}$$\\
+\begin{equation}
+h{\left (k,i \right )}
+ = 
+\operatorname{Mod}{\left (i \operatorname{h_{2}}{\left (k \right )} + \operatorname{h_{1}}{\left (k \right )},t \right )}
+\end{equation}
+\begin{equation}
+\operatorname{h_{1}}{\left (k \right )}
+ = 
+\operatorname{Mod}{\left (k,t \right )}
+\end{equation}
+\begin{equation}
+\operatorname{h_{2}}{\left (k \right )}
+ = 
+\operatorname{Mod}{\left (k,t - 1 \right )} + 1
+\end{equation}
+\subsection*{Linear Probing}
+\begin{equation}\begin{bmatrix}22, & 88, & \mathrm{None}, & \mathrm{None}, & 4, & 15, & 28, & 17, & 5, & 31, & 10\end{bmatrix}\end{equation}
+\subsection*{Quadratic Probing}
